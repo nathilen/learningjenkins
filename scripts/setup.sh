@@ -14,7 +14,7 @@ generate_jar() {
 	
    /usr/bin/jar -cvef Hello MyHello.jar *.class &&
    
-	if [! -d "$JAR_DIRECTORY" ]; then
+	if [ ! -d "$JAR_DIRECTORY" ]; then
 		mkdir "$JAR_DIRECTORY"
 	fi
 	mv -f MyHello.jar $JAR_DIRECTORY
