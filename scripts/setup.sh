@@ -1,6 +1,6 @@
 #! /bin/sh
-$MAIN_DIRECTORY="$WORKSPACE/src/main"
-$JAR_DIRECTORY="$WORKSPACE/out/production/lib"
+MAIN_DIRECTORY="$WORKSPACE/src/main"
+JAR_DIRECTORY="$WORKSPACE/out/production/lib"
 
 src_compile() {
 	echo "Will now compile source code"
@@ -26,6 +26,7 @@ run_jar() {
 	/usr/bin/java -jar $WORKSPACE/out/production/lib/MyHello.jar 
 }
 
+echo $MAIN_DIRECTORY
 src_compile &&
 generate_jar &&
 run_jar
