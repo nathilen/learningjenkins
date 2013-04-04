@@ -19,3 +19,7 @@ run_jar() {
 	/usr/bin/java -jar $WORKSPACE/out/production/lib/MyHello.jar 
 }
 
+src_compile &&
+generate_jar &&
+run_jar
+
